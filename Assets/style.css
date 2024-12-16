@@ -1,0 +1,332 @@
+*   {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+a   {text-decoration: none; color: rgb(0, 0, 0)}
+:root{
+    --menu: rgba(7, 250, 169, 0.8);
+    --campo: rgb(175, 255, 209);
+    --body: rgb(230, 243, 243);
+    --bubble: rgb(231, 174, 224);
+}
+body{
+    background-color: var(--body);
+}
+header{
+    background-color: rgb(101, 253, 208);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    height: 7rem;
+    border-radius: 0 0 2rem 2rem;
+}
+header label{
+    display: flex;
+    margin: 0.7rem 2rem -0.3rem 1rem;
+}
+.submit{
+    justify-content: flex-end;
+}
+.button{
+    padding: 0.3rem;
+    font-size: 0.9rem;
+    background-color: rgb(209, 204, 204);
+    border: 0.1rem solid gray;
+    border-radius: 0.6rem;
+}
+nav{
+    position: fixed;
+    display: block;
+    margin-left: 93%;
+    width: 7%;
+    z-index: 5;
+}
+nav ul{
+    list-style-type: none;
+    border-radius: 2rem;
+}
+#butt{
+    display: none;
+}
+#lab{
+    background-color: rgb(71, 104, 104);
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+}
+.ham{
+    color: black;
+    content: "a";
+}
+#butt:checked ~ #navi{
+    background-color: var(--menu);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: -200%;
+}
+#navi li:hover{
+    box-shadow: 0.2rem 0.2rem 0.2rem;
+    transition: 200ms;
+}
+#navi{
+    display: none;
+    width: 10rem;
+    position: relative;
+}
+nav>ul>li{
+    position: relative;
+}
+nav>ul>li>ul{
+    background-color: var(--menu);
+    display: none;
+    position: absolute;
+    top: 1rem;
+    right: 10rem;    
+}
+nav>ul>li:hover>ul{
+    display: block;
+    transition: 800ms;
+}
+h1{
+    text-align: center;
+    padding: 2rem;
+}
+h2{
+    text-align: center;
+    margin: 2rem 2.5rem 2rem 0;
+}
+h3{
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+h4{
+    text-decoration: underline;
+    margin: 1rem;
+    padding: 0.5rem 0.5rem;
+}
+h5{
+    font-size: 1.5rem;
+}
+h6{
+    font-size: 1rem;
+}
+.Q{
+    background-color: var(--campo);
+    border-radius: 2rem;
+    margin: 0 3rem;
+}
+.who{
+    text-align: center;
+}
+.shadow{
+    border-radius: 3rem;
+    margin: 0 3rem;
+}
+.staff{
+    background-color: var(--campo);
+    display: flex;
+    justify-content: center;
+    border-radius: 0 3rem;
+}
+main h3{
+    background-color: var(--campo);
+    border-radius: 2rem 2rem 0 0;
+}
+.staff{
+    border-radius: 0 0 3rem 3rem;
+}
+.staff img{
+    border-radius: 0 4rem;
+    height: 8rem;
+    width: 8rem;
+}
+.profe{
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem 0;
+}
+.date{
+    display: flex;
+    background-color: var(--campo);
+}
+.calendario{
+    margin-left: 1rem;
+    margin-top: 2rem;
+    height: 5rem;
+    font-size: 1.5rem;
+    background-color: rgb(194, 230, 231);
+    border-radius: 0 2rem;
+    border: none;
+}
+.prx_ev{
+    margin: 0 2rem;
+    text-align: center;
+}
+.overf{
+    width: 90%;
+    overflow-x: scroll;
+    margin: 0 auto;
+    background-color: var(--campo);
+    border-radius: 0 0 2rem 2rem;
+}
+.eve{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    max-height: 250px;
+    width: 1000px;
+}
+.ult_ev{
+    text-align: center;
+    width: 500px;
+}
+.caru{
+    padding: 2rem 5rem;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    gap: 5px
+}
+.caru img{
+    height: 20rem;
+    scroll-snap-align: center;
+    border-radius: 15px;
+}
+.vid_int{
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+    border-radius: 2rem;
+}
+.faq{
+    background-color: rgb(146, 247, 247);
+    border-radius: 2rem;
+    margin-bottom: 5rem;
+    padding-bottom: 2rem;
+}
+.faq details{
+    padding: 1rem 1.5rem;
+        
+}
+.faq details:hover{
+    background-color: rgb(99, 151, 151);
+}
+.faq details summary{
+    list-style: none;
+}
+.faq p, .faq li{
+    margin: 0 2rem;
+}
+/*Footer*/
+footer {
+    background-color: rgb(43, 70, 88);
+    width: 100%;
+    color: white;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 5rem;
+    position: fixed;
+    bottom: 0;
+}
+.dire{
+    display: flex;
+    align-items: center;
+}
+.dire p{
+    width: 7rem;
+}
+footer a{
+    color: white;
+}
+footer div{
+    padding: 0 2rem;
+}
+.fotsec div{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 -2rem;
+}
+.fotsec{
+    align-content: center;
+}
+.fotsec img{
+    margin: 0.5rem;
+    height: 22rem;
+    height: 2rem;
+    margin: 0.2rem;
+}
+.legal{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    filter: sepia(500%) hue-rotate(500deg) brightness(850%);
+    height: 4rem;
+    margin: auto 0;
+}
+@media screen and (min-width: 1080px){
+    .hdfaq{
+        display: flex;
+    }
+    .list{
+        width: 50%;
+    }
+    .list2{
+        width: 50%;
+    }
+    #butt:checked ~ #navi{
+        margin-left: -100%;
+    }
+}
+@media screen and (min-width: 1920px){
+    nav{
+        position: relative;
+        display: inline-block;
+        margin-left: 0%;
+        width: 100%;
+    }
+    .home{
+        flex-direction: row-reverse;
+    }
+    #lab{
+        display: none;
+    }
+    #navi{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: var(--menu);
+        border-radius: 2rem;
+    }
+    .desk{
+        display: flex;
+        align-items: center;
+    }
+    .vid_int{
+        position: absolute;
+        top: 15rem;
+        right: 18%;
+        border-radius: 2rem;
+    }
+    .caru{
+        height: 20rem;
+        margin: 42rem 2rem 0 0;
+    }
+    .list{
+        height: 15rem;
+    }
+    nav>ul>li>ul{
+        background-color: var(--menu);
+        display: none;
+        position: absolute;
+        top: 4.4rem;
+        right: 0;  
+    }
+}

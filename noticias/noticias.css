@@ -1,0 +1,41 @@
+
+/*estilos generales*/
+.contenedor {padding: 2rem;
+            background-color: var(--body);
+            border-radius: 1rem;}
+
+.noticia {background-color: var(--campo);
+          margin-bottom: 3rem;
+          padding: .5rem;
+          border-radius: 1rem;
+          overflow: hidden;}
+
+.parrafo {font-size: 1rem;
+           color: #333;
+           text-align: justify center;}
+
+.noticia img {width: 45%;
+              height: 25%;
+              border-radius: 1rem;
+              margin: auto;
+              display: block;}
+
+    
+.parrafo  {max-height: 10rem; /* Limita la altura del texto para la descripcion de lo P */
+           overflow-y: scroll;
+           text-align: center;}
+
+.centrar{width: 20%;
+         background-color: rgb(61, 18, 18);}
+
+/*Media Queri Imagenes*/
+@media screen and (min-width: 1080px){
+   .noticia img {width: 60%;
+   height: 45%;}
+    .parrafo{font-size: 1.4rem;}}
+      
+   @media screen and (min-width: 1920px){
+   .noticia img {width: 65%;
+   height: 50%;}}
+   
+   
